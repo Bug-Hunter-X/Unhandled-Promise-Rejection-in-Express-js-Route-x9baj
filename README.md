@@ -1,0 +1,3 @@
+This repository demonstrates a common error in Express.js applications: unhandled promise rejections in asynchronous routes.  The `bug.js` file showcases the problem, where an asynchronous operation within a route handler lacks proper error handling.  This can lead to the server crashing without informative error messages.
+
+The `bugSolution.js` file provides a corrected version with robust error handling using a `try...catch` block or `.catch()` for promises. This prevents server crashes and allows for graceful handling of errors, providing better user experience and maintainability.
